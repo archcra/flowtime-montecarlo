@@ -1,0 +1,38 @@
+.fade {
+  font: 2em/1.6em Arial;
+  position: relative;
+}
+
+.fade:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(255,255,255, 1), rgba(255,255,255,0)  90%);
+  width: 100%;
+  height: 4em;
+}
+
+.fade:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255, 1) 90%);
+  width: 100%;
+  height: 4em;
+}
+
+/* from: http://stackoverflow.com/questions/22666063/how-to-fade-the-edge-of-a-div-with-just-css
+http://codepen.io/anon/pen/sbHAc/
+*/
+
+.img-container img {
+display:inline-block;
+width: 593px; /* or whatever you want*/
+height: 376px; /* same as above */
+}

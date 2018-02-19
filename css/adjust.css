@@ -1,0 +1,30 @@
+span, p, li, td, th {
+  color: white;
+}
+
+
+/* for google code pretty line  numbers feature */
+.gcp-li {
+  font-size: 0.1 em;
+}
+.gcp-ol {
+  font-size: 0.1 em;
+}
+
+
+
+
+table.tutorial-table {
+    border-style:solid;
+    border-width:2px;
+}
+
+table.tutorial-table th {
+    border-style:solid;
+    border-width:1px;
+}
+
+table.tutorial-table td {
+    border-style:solid;
+    border-width:1px;
+}

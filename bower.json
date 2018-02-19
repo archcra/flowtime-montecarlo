@@ -1,0 +1,17 @@
+{
+    "name": "intro-bower",
+    "version": "0.0.1",
+    "authors": [
+        "Huo Yongxue <huo.yongxue@viathink.com>"
+    ],
+    "description": "Introduction of Bower",
+    "main": "index.html",
+    "license": "MIT",
+    "homepage": "intro-bower.rifle.im",
+    "dependencies": {
+        "jquery": "*",
+        "async ": "1.5.2",
+        "flowtime": "*",
+        "bootstrap": "3.3.7"
+    }
+}
