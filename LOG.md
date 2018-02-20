@@ -14,6 +14,10 @@ https://deepmind.com/research/alphago/
 https://en.wikipedia.org/wiki/Monte_Carlo
 
 
+https://en.wikipedia.org/wiki/Pi#/media/File:Pi_30K.gif
+
+
+
 
 # 增加脚本事件
 

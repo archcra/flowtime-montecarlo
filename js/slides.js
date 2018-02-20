@@ -25,7 +25,11 @@ var slidePages = [
   ],
   ["slides/c20/s10-in-action.html",
 "slides/c20/s20-in-action.html",
-"slides/c20/s30-in-action.html"],
+"slides/c20/s30-in-action.html",
+"slides/c20/s40-in-action.html",
+"slides/c20/s50-in-action.html",
+"slides/c20/s60-in-action.html",
+"slides/c20/s70-in-action.html"],
   ["slides/c30/s10-in-action.html"
   ],
   ["slides/c40/s10-dive-in.html"],

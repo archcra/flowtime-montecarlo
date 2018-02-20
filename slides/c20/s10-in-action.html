@@ -7,8 +7,32 @@
 <strong class="attention" style="font-size:1.5em;">
   Children play pebble game on MonteCarlo beach.
  </strong>
-<p>
-游戏是这样的：在海滩上，画一个方块；在方块中，画个最大的圆；然后，向这个方块中，随机地扔鹅卵石；
-</p>
+ <pre class="language-markup"><code class="language-python">
+   import random
 
-<img width="50%" style="position:absolute;left:420px;top:280px;z-index: -100;opacity:1" src="../../images/c20/pebble-game.png">
+   n_trials = 4000
+   n_hits = 0
+   for iter in range(n_trials):
+       x, y = random.uniform(-1.0, 1.0), random.uniform(-1.0, 1.0)
+       if x**2 + y**2 < 1.0:
+           n_hits += 1
+   print 4.0 * n_hits / float(n_trials)
+ </code></pre>
+
+ <pre class="language-markup"><code class="language-python">
+ function getRandomArbitrary(min, max) {
+   return Math.random() * (max - min) + min;
+ }
+
+ function directSamplingA(trials){
+   var hits = 0;
+   for (var i=0; i< trials; i++){
+     var x = getRandomArbitrary(-1,1);
+     var y = getRandomArbitrary(-1,1);
+     if(x**2 + y**2 < 1.0){
+       hits +=1;
+     }
+   }
+   return 4.0 * hits/ trials;
+ }
+</code></pre>

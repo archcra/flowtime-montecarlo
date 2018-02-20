@@ -20,7 +20,8 @@ function navigationHandler(e) {
 
       $('#s1p4-btn1').click(function() {
         var trials = $('#s1p4_i1').val();
-         console.log(trials, directSamplingA(trials));
+        var result = directSamplingA(trials)
+         $('#s1p4_i2').val(result);
       });
 
       $('#s1p4_i1').val(1000);
@@ -28,40 +29,24 @@ function navigationHandler(e) {
 
       break;
 
-    case "s5p6":
-      console.log('in s5p6');
-      initFlipping();
-      break;
+    case "s3p5":
 
-    case "s5p8": // secion 5 page 8,
-      $('#c50s90').addClass('sticky-notes');
-      break;
+    $('#s3p5-btn1').click(function() {
+      var trials = $('#s3p5_i1').val();
+      var delta = $('#s3p5_i2').val();
 
-    case "s5p14":
-      $('#c50s150ul01').addClass("osx-dock");
-      console.log('class osx dock added.')
+      var result = markovChainSamplingA(trials, delta)
+       $('#s3p5_i3').val(result);
 
-      break;
+    });
 
-    case "s5p15":
-      $(".fancybox-overlay fancybox-overlay-fixed").show();
+    $('#s3p5_i1').val(1000);
+    $('#s3p5_i2').val(0.1);
 
-      initHoveringGallery();
-      initHovering();
-      console.log('hovering gallery')
 
       break;
 
-    case "s5p17":
-      initFallingLeaves();
-      console.log('in falling leaves')
 
-      break;
-    case "s11p0":
-      initMatrixText();
-      console.log('in initMatrixText')
-
-      break;
 
     default:
 
