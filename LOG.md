@@ -12,3 +12,24 @@ https://medium.com/applied-data-science/alphago-zero-explained-in-one-diagram-36
 https://deepmind.com/research/alphago/
 
 https://en.wikipedia.org/wiki/Monte_Carlo
+
+
+
+# 增加脚本事件
+
+1. 加入脚本：
+/Users/holibut/vcs/github/flowtime-montecarlo/js/navigation-handler.js
+2. 在index.html中，加入脚本引用
+放在main.js之后：
+<script src="js/navigation-handler.js"></script>
+就可以了。
+
+之后，需要换页后，才有页id的console提示。
+
+
+
+# Buttons
+
+https://codepen.io/chrisdothtml/pen/waKBdM?q=css%20button&order=popularity&depth=everything&show_forks=false
+
+Colorful CSS Buttons

@@ -48,7 +48,7 @@
    var page = 's' + e.sectionIndex + 'p' + e.pageIndex;
    switch (page) {
      case "s0p0":
-        
+
        break;
 
 
@@ -86,6 +86,6 @@
      document.dispatchEvent(event);
 
      Flowtime.onNavigation(navigationHandler);
-     initParse();
+
    });
  });

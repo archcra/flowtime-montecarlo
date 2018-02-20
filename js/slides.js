@@ -15,13 +15,17 @@ var slidePages = [
   ],
   ["slides/c05/s10-prelude.html",
     "slides/c05/s20-prelude.html",
-    "slides/c05/s30-prelude.html"
+    "slides/c05/s30-prelude.html",
+      "slides/c05/s40-prelude.html",
+        "slides/c05/s50-prelude.html"
   ],
   ["slides/c10/s10-what.html",
     "slides/c10/s20-what.html",
     "slides/c10/s30-what.html"
   ],
-  ["slides/c20/s10-in-action.html"],
+  ["slides/c20/s10-in-action.html",
+"slides/c20/s20-in-action.html",
+"slides/c20/s30-in-action.html"],
   ["slides/c30/s10-in-action.html"
   ],
   ["slides/c40/s10-dive-in.html"],
