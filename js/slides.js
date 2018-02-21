@@ -30,10 +30,14 @@ var slidePages = [
 "slides/c20/s50-in-action.html",
 "slides/c20/s60-in-action.html",
 "slides/c20/s70-in-action.html"],
-  ["slides/c30/s10-in-action.html"
+  ["slides/c30/s10-why.html",
+  "slides/c30/s20-why.html",
+  "slides/c30/s30-why.html",
+  "slides/c30/s40-why.html"
   ],
-  ["slides/c40/s10-dive-in.html"],
-  ["slides/c50/s10-application.html"],
+  ["slides/c50/s10-application.html",
+"slides/c50/s20-application.html",
+"slides/c50/s30-application.html"],
   ["slides/c70/s10-mcts.html"
   ],
   ["slides/c80/s10-summary.html"],

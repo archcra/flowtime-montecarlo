@@ -37,3 +37,10 @@ https://en.wikipedia.org/wiki/Pi#/media/File:Pi_30K.gif
 https://codepen.io/chrisdothtml/pen/waKBdM?q=css%20button&order=popularity&depth=everything&show_forks=false
 
 Colorful CSS Buttons
+
+
+
+#
+https://en.wikipedia.org/wiki/Metropolis%E2%80%93Hastings_algorithm#/media/File:3dRosenbrock.png
+
+The result of three Markov chains running on the 3D Rosenbrock function using the Metropolis-Hastings algorithm. The algorithm samples from regions where the posterior probability is high and the chains begin to mix in these regions. The approximate position of the maximum has been illuminated. Note that the red points are the ones that remain after the burn-in process. The earlier ones have been discarded.
