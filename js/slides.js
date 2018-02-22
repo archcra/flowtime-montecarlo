@@ -37,10 +37,13 @@ var slidePages = [
   ],
   ["slides/c50/s10-application.html",
 "slides/c50/s20-application.html",
-"slides/c50/s30-application.html"],
+"slides/c50/s30-application.html",
+"slides/c50/s40-application.html",
+"slides/c50/s50-application.html"],
   ["slides/c70/s10-mcts.html"
   ],
   ["slides/c80/s10-summary.html"],
+  ["slides/c85/s10-question.html"],
   ["slides/c90/s10-references.html"],
   ["slides/ca0/s10-bye.html"]
 ];
