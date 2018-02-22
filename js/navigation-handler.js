@@ -21,7 +21,7 @@ function navigationHandler(e) {
       $('#s1p4-btn1').click(function() {
         var trials = $('#s1p4_i1').val();
         var result = directSamplingA(trials)
-         $('#s1p4_i2').val(result);
+        $('#s1p4_i2').val(result);
       });
 
       $('#s1p4_i1').val(1000);
@@ -31,20 +31,26 @@ function navigationHandler(e) {
 
     case "s3p5":
 
-    $('#s3p5-btn1').click(function() {
-      var trials = $('#s3p5_i1').val();
-      var delta = $('#s3p5_i2').val();
+      $('#s3p5-btn1').click(function() {
+        var trials = $('#s3p5_i1').val();
+        var delta = $('#s3p5_i2').val();
 
-      var result = markovChainSamplingA(trials, delta)
-       $('#s3p5_i3').val(result);
+        var result = markovChainSamplingA(trials, delta)
+        $('#s3p5_i3').val(result);
 
-    });
+      });
 
-    $('#s3p5_i1').val(1000);
-    $('#s3p5_i2').val(0.1);
+      $('#s3p5_i1').val(1000);
+      $('#s3p5_i2').val(0.1);
 
 
       break;
+
+    case "s6p0":
+
+    startTicTacToe();
+      break;
+
 
 
 
