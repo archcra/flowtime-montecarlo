@@ -48,9 +48,46 @@ function navigationHandler(e) {
 
     case "s6p0":
 
-    startTicTacToe();
+      startTicTacToe();
       break;
 
+
+    case "s6p3":
+
+      console.log('in s6p3 ');
+
+
+      $('#s6p3_trials').val(1000);
+      $('#s6p3_change').val('1,9,10');
+      $('#s6p3_sum').val(18);
+
+
+      $('#s6p3_play').click(function() {
+        console.log('start to play ...');
+        var command = '';
+        var result = find_change_engine.handleCommand(command)
+
+
+        var change = $('#s6p3_change').val();
+        var total = $('#s6p3_sum').val();
+
+        var command1 = 'position '+ change + ' '+total;
+        console.log('command 1 is: ', command1)
+        var response = find_change_engine.handleCommand(command1);
+
+        var moves = [];
+        while(response.bestmove != -1){
+          moves.push(response.bestmove);
+          total = total - response.bestmove;
+          command1 = 'position '+ change + ' '+total;
+          response = find_change_engine.handleCommand(command1);
+        }
+        console.log('moves: ', moves)
+        $('#s6p3_result').val(moves);
+
+
+      });
+      break;
 
 
 
