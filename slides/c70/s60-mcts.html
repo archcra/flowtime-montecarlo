@@ -1,0 +1,15 @@
+<h1> UCT introduction - 5 </h1>
+
+<strong>
+2. Expansion
+</strong>
+<p>
+Create a statistics node for the node you stopped at in the selection phase. It appears that most implementations will also force the expansion of all the children of a node once a node’s visit count reaches some threshold. One implementation I found used a threshold of 30.
+</p>
+<strong>
+3. Simulation
+</strong>
+<p>
+Simulate or roll out a game starting from the node you created in the expansion phase. You basically play a game to the end,
+choosing moves randomly (or semi-randomly). At the end, you keep track of which player won and then move to the backpropagation phase.
+</p>

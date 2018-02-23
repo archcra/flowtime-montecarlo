@@ -50,7 +50,11 @@ var slidePages = [
   ["slides/c70/s10-mcts.html",
   "slides/c70/s20-mcts.html",
   "slides/c70/s30-mcts.html",
-  "slides/c70/s40-mcts.html"
+  "slides/c70/s40-mcts.html",
+  "slides/c70/s50-mcts.html",
+  "slides/c70/s60-mcts.html",
+  "slides/c70/s70-mcts.html",
+  "slides/c70/s80-mcts.html"
   ],
   ["slides/c80/s10-summary.html"],
   ["slides/c85/s10-question.html"],

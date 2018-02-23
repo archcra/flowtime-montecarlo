@@ -1,0 +1,20 @@
+<h1> UCT introduction - 4 </h1>
+<img width="20%" style="position:absolute;left:1180px;top:8px;z-index: -100;opacity:1" src="../../images/c70/uct.png">
+
+
+<strong>1. Selection</strong>
+<p>
+Walk down the game tree using a selection function at each node to determine which child node to walk to next. Stop when you reach a node that you don’t have statistics for yet.
+
+The selection function most commonly used is called UCT and is as follows(右上角图):
+</p>
+<pre>
+  Where:
+
+    wi stands for the number of wins after the ith move
+    ni stands for the number of simulations after the ith move
+    c is the exploration parameter. sqrt(2) is a good first guess for this number, but in practice, you’ll have to tune it experimentally.
+    t stands for the total number of simulations, equal to the sum of all ni. Or, another way to think about this is that it’s the ni of the parent node
+
+You then select the child node that the highest selection function value.
+</pre>

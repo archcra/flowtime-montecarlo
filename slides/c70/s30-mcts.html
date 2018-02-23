@@ -1,23 +1,26 @@
-<h1> introduction </h1>
+<h1> UCT introduction - 2  </h1>
 
+<img width="30%" style="position:absolute;left:1180px;top:10px;z-index: -100;opacity:1" src="../../images/c70/uct.png">
 
+<p>
+  They recommend to choose in each node of the game tree the
+move, for which the expression<br>
+（公式请见右上）<br>
+has the highest value, where wi is the number of of wins after the ith move, ni is the number of simulations after the
+ith move, c is the exploration parameter which theoretically equal to √2.
+t is the total number of simulations, equal to the sum of all ni.  These steps are summarized in the following pseudocode in Algorithm 1(Original MCTS):
 
-http://download.tuxfamily.org/jdhp/pdf/mcts_slides.pdf
+</p>
+<pre class="language-markup"><code class="language-python">
+function MCTSearch(s0)
+  create root node v0 with state s0.
+  while within computational budget do
+    vl ← TreePolicy(v0)
+    ∆  ← Simulate(s(vl))
+    Backprog(∆, vl)
 
-??
-https://jeffbradberry.com/posts/2015/09/intro-to-monte-carlo-tree-search/
-
-
-https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwir6N-J3bnZAhVDoJQKHfcbBiYQtwIIQTAC&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DonBYsen2_eA&usg=AOvVaw07XXGP6tHgk_iNPF6EOQcp
-
-
-https://www.youtube.com/watch?v=Fbs4lnGLS8M
-
-https://www.kdnuggets.com/2017/12/introduction-monte-carlo-tree-search.html
-
-
-
-https://blog.theofekfoundation.org/artificial-intelligence/2016/06/27/what-is-the-monte-carlo-tree-search/
-
-
-https://spin.atomicobject.com/2015/12/12/monte-carlo-tree-search-algorithm-game-ai/
+  return Bestchild(v0)
+</code></pre>
+<p>
+  where textitBestchild leads to the best child of the root node v0.
+</p>

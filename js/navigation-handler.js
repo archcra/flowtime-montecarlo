@@ -52,7 +52,7 @@ function navigationHandler(e) {
       break;
 
 
-    case "s6p3":
+    case "s6p7":
 
       console.log('in s6p3 ');
 

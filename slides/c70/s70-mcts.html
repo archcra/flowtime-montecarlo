@@ -1,0 +1,12 @@
+<h1> UCT introduction - 6  </h1>
+
+<strong>
+4. Backpropagation
+</strong>
+<p>
+Walk back up the tree to the root. On each statistics node, increment a “visit” count. Also, increment a “win” count if the current player of game node that’s the parent of the current game node is the player that won the simulation.
+</p>
+<p>
+Then you repeat the four steps as many times as you can, until you’ve either decided you’ve done enough work or you run out of time.
+You pick the move that ends up at the child node with the win/visit count ratio.
+</p>

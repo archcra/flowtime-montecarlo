@@ -1,38 +1,11 @@
-<h1> introduction 2 </h1>
+<h1> <a href="https://spin.atomicobject.com/2015/12/12/monte-carlo-tree-search-algorithm-game-ai/">UCT introduction - 3 </a></h1>
+<p>
+  As the name hints, the algorithm works by representing all the possible states of the game in a “game tree.” The root node of the tree is the initial game state. For every valid move from a node (a game state), there is a child node representing the new game state if that move is chosen.
+</p>
+<div style="background:white">
+<img width="50%" style="z-index: -100;opacity:1" src="../../images/c70/808px-MCTS_English.svg_.png">
+</div>
+<p>
+  Then on top of this imaginary “game tree,” you build another more concrete tree that tracks some statistics (a visit count and a win count) generated with a four-step algorithm:
 
-
-<form>
-
-   <div class="group">
-     <input type="text" required id="s6p3_trials">
-     <span class="highlight"></span>
-     <span class="bar"></span>
-     <label>Trials(试验次数)</label>
-   </div>
-
-   <div class="group">
-     <input type="text" required id="s6p3_change">
-     <span class="highlight"></span>
-     <span class="bar"></span>
-     <label>零钱数</label>
-   </div>
-
-   <div class="group">
-     <input type="text" required id="s6p3_sum">
-     <span class="highlight"></span>
-     <span class="bar"></span>
-     <label>总额</label>
-   </div>
-
-
-   <div class="group">
-     <input type="text" required id="s6p3_result">
-     <span class="highlight"></span>
-     <span class="bar"></span>
-     <label>结果</label>
-   </div>
-
- </form>
-
-
-<button class="btn btn-orange btn-fill-vert-o" id="s6p3_play">Carrot</button>
+</p>

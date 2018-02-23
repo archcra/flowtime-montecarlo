@@ -950,7 +950,7 @@ Uct.prototype.getActionInfo = function(board, maxIterations, maxTime, verbose) {
       var node = root;
       var variantBoard = board.copy();
       /* Selection */
-
+      // debugger;
       while (node.unexamined.length == 0 && node.children.length > 0) {
         node = node.selectChild();
         variantBoard.doAction(node.action);
