@@ -77,6 +77,7 @@ function navigationHandler(e) {
 
         var moves = [];
         while(response.bestmove != -1){
+          log(response.info); // 显示运行信息
           moves.push(response.bestmove);
           total = total - response.bestmove;
           command1 = 'position '+ change + ' '+total;
@@ -85,8 +86,13 @@ function navigationHandler(e) {
         console.log('moves: ', moves)
         $('#s6p3_result').val(moves);
 
-
       });
+
+
+      $('#clearLogButton').click(function() {
+        $("#logText").html("> Begin log for MCTS ...<br>");
+      });
+
       break;
 
 
