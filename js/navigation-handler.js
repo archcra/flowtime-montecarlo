@@ -2,7 +2,7 @@ function navigationHandler(e) {
   // Docs from here: https://github.com/marcolago/flowtime.js
   // 这个事件用于执行为特定页面执行的脚本-因为直接在页面(slide)中加脚本不被执行
   var page = 's' + e.sectionIndex + 'p' + e.pageIndex;
-  console.log('in page: ', page);
+  console.log('Now in page: ', page);
 
   // document.getElementById('c05s160div01').style.display = 'none';
   $(".fancybox-image").hide();
@@ -53,26 +53,16 @@ function navigationHandler(e) {
 
 
     case "s6p7":
-
-      console.log('in s6p3 ');
-
-
       $('#s6p3_trials').val(1000);
       $('#s6p3_change').val('1,9,10');
       $('#s6p3_sum').val(18);
 
 
       $('#s6p3_play').click(function() {
-        console.log('start to play ...');
-        var command = '';
-        var result = find_change_engine.handleCommand(command)
-
-
         var change = $('#s6p3_change').val();
         var total = $('#s6p3_sum').val();
 
         var command1 = 'position ' + change + ' ' + total;
-        console.log('command 1 is: ', command1)
         var response = find_change_engine.handleCommand(command1);
 
         var moves = [];
@@ -83,7 +73,6 @@ function navigationHandler(e) {
           command1 = 'position ' + change + ' ' + total;
           response = find_change_engine.handleCommand(command1);
         }
-        console.log('moves: ', moves)
         $('#s6p3_result').val(moves);
 
       });
