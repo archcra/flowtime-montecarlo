@@ -71,16 +71,16 @@ function navigationHandler(e) {
         var change = $('#s6p3_change').val();
         var total = $('#s6p3_sum').val();
 
-        var command1 = 'position '+ change + ' '+total;
+        var command1 = 'position ' + change + ' ' + total;
         console.log('command 1 is: ', command1)
         var response = find_change_engine.handleCommand(command1);
 
         var moves = [];
-        while(response.bestmove != -1){
+        while (response.bestmove != -1) {
           log(response.info); // 显示运行信息
           moves.push(response.bestmove);
           total = total - response.bestmove;
-          command1 = 'position '+ change + ' '+total;
+          command1 = 'position ' + change + ' ' + total;
           response = find_change_engine.handleCommand(command1);
         }
         console.log('moves: ', moves)
@@ -95,7 +95,10 @@ function navigationHandler(e) {
 
       break;
 
+    case "s8p4":
+      drawLineChart('s8p4_mountNode', "data/changGroup.json");
 
+      break;
 
     default:
 

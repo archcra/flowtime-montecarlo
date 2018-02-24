@@ -1,0 +1,45 @@
+<h1> Question 2 - 蒙特卡罗方法 </a></h1>
+
+
+
+
+<div class="row" style="margin-top:-2em;">
+  <div class="col-md-6">
+    <pre >
+      把k个种子分一组，测得这一组是否转基因成功， 假设在n组中有x组阳性，把x/n变回去就是，1-(1-x/n)^(1/k), 种子的成功率，现在考虑不同k， 这个估计的均方误差（MSE， 等于方差+偏差平方，这个数越小越好）
+
+      图中是取-log10, 所以越大越好
+
+      p=0.01时，均方误差从大约k=100开始崩溃，迅速下降
+
+      所以k取100和1均方误差相差大概3倍，0.3个数量级
+
+      但是考虑到0.01是估计值，所以又考虑了p=0.001和0.05时的情况
+
+      p=0.05时，均方误差的的“崩溃点“提前了，大概是40
+
+      这时候如果k取100，效果是极差的
+
+      所以k取40是比较妥当的
+
+      这个也是Monte Carlo?
+
+      是的，因为精确的MSE很难计算
+
+      公式：1-(1-x/n)^(1/k):
+
+      每个种子的阳性率是p，每组的阳性率是p*=1-(1-p)^k
+
+      现在估计p*是x/n，带进去，解出来p，就是要求的概率。
+    </pre>
+
+  </div>
+  <div class="col-md-6">
+
+    <img width="50%"  style="z-index: -100;opacity:1" src="../../images/c85/mse1.png">
+    <img width="50%" style="z-index: -100;opacity:1" src="../../images/c85/mse2.png">
+    <img width="50%" style="z-index: -100;opacity:1" src="../../images/c85/mse3.png">
+
+  </div>
+
+</div>
